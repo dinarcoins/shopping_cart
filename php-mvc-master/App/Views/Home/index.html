@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+    <h1>Welcome</h1>
+    {% for user in variable %}
+    * {{ user.email }}
+    {% else %}
+        No users have been found.
+    {% endfor %}
+
+{% endblock %}
